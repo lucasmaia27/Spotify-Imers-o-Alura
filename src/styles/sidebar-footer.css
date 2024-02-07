@@ -39,6 +39,7 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
+    transition: filter 0.2s ease-in-out;
 }
 
 .sidebar nav ul li .fa {
@@ -48,7 +49,7 @@
 }
 
 .sidebar nav ul li a:hover {
-    color: #ffffff;
+    filter: brightness(1.6);
 }
 
 .library {
@@ -78,6 +79,11 @@
     text-transform: none;
     padding: 20px 10px;
     display: flex;
+    transition: filter 0.2s ease-in-out;
+}
+
+.library__button:hover {
+    filter: brightness(1.6);
 }
 
 .library .library__button .fa {
@@ -87,13 +93,14 @@
     padding-right: 8px;
 }
 
+
 .library__content {
     display: flex;
     justify-content: space-between;
 }
 
 .library .library__content .fa-plus {
-   margin: 24px 10px;
+    margin: 24px 10px;
 }
 
 .section-playlist {
@@ -117,20 +124,20 @@
 }
 
 .section-playlist__content .text {
-   padding-bottom: 14px;
-   color: #fff;
+    padding-bottom: 14px;
+    color: #fff;
 }
 
 .section-playlist__content .title {
-   font-weight: 700;
+    font-weight: 700;
 }
 
 .section-playlist__content .subtitle {
     font-weight: 500;
     font-size: 0.8rem;
- }
+}
 
- .section-playlist__content .section-playlist__button {
+.section-playlist__content .section-playlist__button {
     background-color: #ffffff;
     color: #000;
     border-radius: 9999px;
@@ -145,6 +152,12 @@
     width: 113px;
     justify-content: center;
     margin-top: 12px;
+    transition: transform 0.2s ease;
+}
+
+.section-playlist__content .section-playlist__button:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeiramente o botão em 5% */
 }
 
 .sidebar .cookies {
@@ -175,6 +188,12 @@
     font-weight: bold;
 }
 
+.languages .languages__button:hover {
+    border-color: #fff;
+}
+
+
+
 .disclaimer-premium {
     position: fixed;
     bottom: 0;
@@ -184,15 +203,19 @@
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    margin: 8px;
 }
+
 .disclaimer-premium .text {
-   flex-shrink: 0;
+    flex-shrink: 0;
 }
+
 .disclaimer-premium .disclaimer-premium__title {
     color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
